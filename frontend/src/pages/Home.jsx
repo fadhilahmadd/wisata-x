@@ -8,6 +8,10 @@ import heroVideo from '../assets/images/hero-video.mp4'
 import wordlImg from '../assets/images/world.png'
 import Subtitle from './../shared/Subtitle'
 
+import SearchBar from '../shared/SearchBar'
+import ServiceList from '../services/ServiceList'
+import FeaturedTourList from '../components/Featured-tours/FeaturedTourList'
+
 const Home = () => {
   return <>(
     <section>
@@ -19,7 +23,7 @@ const Home = () => {
                 <Subtitle subtitle={'Wonosobo Asri'} />
                 <img src={wordlImg} alt="" />
               </div>
-              <h1>Traveling <span className='highlight'>memories</span>
+              <h1>Welcome to <span className='highlight'>Healinggo</span>
               </h1>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, quidem?</p>
             </div>
@@ -29,6 +33,39 @@ const Home = () => {
               <img src={heroImg} alt="" />
             </div>
           </Col>
+          <Col lg='2'>
+            <div className="hero__img-box mt-4">
+              <video src={heroVideo} alt="" controls />
+            </div>
+          </Col>
+          <Col lg='2'>
+            <div className="hero__img-box mt-5">
+              <img src={heroImg02} alt="" />
+            </div>
+          </Col>
+          <SearchBar />
+        </Row>
+      </Container>
+    </section>
+    <section>
+      <Container>
+        <Row>
+          <Col lg='3'>
+            <h5 className="services__subtitle">What we serve</h5>
+            <h2 className="services__title">we offer our best services</h2>
+          </Col>
+          <ServiceList />
+        </Row>
+      </Container>
+    </section>
+    <section>
+      <Container>
+        <Row>
+          <Col lg='12' className='mb-5'>
+            <Subtitle subtitle={'Explore'} />
+            <h2 className='featured__tour-title'>Our Featured Tour</h2>
+          </Col>
+          <FeaturedTourList />
         </Row>
       </Container>
     </section>
