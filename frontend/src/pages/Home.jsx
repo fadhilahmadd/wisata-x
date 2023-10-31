@@ -17,7 +17,7 @@ import Testimonials from '../components/Testimonial/Testimonials'
 import Newsletter from '../shared/Newsletter'
 
 const Home = () => {
-  return <>(
+  return <>
     <section>
       <Container>
         <Row>
@@ -78,7 +78,7 @@ const Home = () => {
         <Row>
           <Col lg='6'>
             <div className="experience__content">
-              <Subtitle subtitle={'Experience'}/>
+              <Subtitle subtitle={'Experience'} />
               <h2>With our all experience <br />we will serve you</h2>
               <p>Lorem ipsum dolor sit amet. <br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, voluptatum!</p>
             </div>
@@ -109,11 +109,11 @@ const Home = () => {
       <Container>
         <Row>
           <Col lg='12'>
-            <Subtitle subtitle={'Gallery'}/>
+            <Subtitle subtitle={'Gallery'} />
             <h2 className='gallery__title'>Our Gallery</h2>
           </Col>
           <Col lg='12'>
-            <MasonryImagesGallery/>
+            <MasonryImagesGallery />
           </Col>
         </Row>
       </Container>
@@ -122,17 +122,16 @@ const Home = () => {
       <Container>
         <Row>
           <Col lg='12'>
-            <Subtitle subtitle={'fans'}/>
+            <Subtitle subtitle={'fans'} />
             <h2 className='testimonial__title'>our fans say</h2>
           </Col>
           <Col lg='12'>
-            <Testimonials/>
+            <Testimonials />
           </Col>
         </Row>
       </Container>
     </section>
-    <Newsletter />
-    )
+    {/* <Newsletter /> */}
   </>
 }
 
